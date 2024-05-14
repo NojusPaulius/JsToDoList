@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        add task
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new task</h1>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="modal-textField textInput" placeholder="Enter task">
+          <input type="text" class="modal-textField priorityInput" placeholder="Enter priority">
+          <input type="text" class="modal-textField dueDateInput" placeholder="Enter due date">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary saveButton">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="toDoList__title">To-Do List</h2>
+
+  <table class="toDoList">
+    <thead>
+      <tr class="toDoList__header-row">
+        <th class="toDoList__header-cell">subject</th>
+        <th class="toDoList__header-cell">priority</th>
+        <th class="toDoList__header-cell">Due Date</th>
+        <th class="toDoList__header-cell">Status</th>
+        <th class="toDoList__header-cell">delete task</th>
+      </tr>
+    </thead>
+    <tbody class="toDoList-body">
+      <!-- <tr class="toDoList__row">
+        <td class="toDoList__cell">
+            <button class="toDoList__check-button">
+                <img class="toDoList__button-logo" src="images/unchecked.png">
+            </button>
+            <span class="toDoList__row-text">get washed in league</span>
+        </td>
+        <td class="toDoList__cell">high</td>
+        <td class="toDoList__cell">2024-05-20</td>
+        <td id="task-status" class="toDoList__cell">Not Started</td>
+        <td class="toDoList__cell"><button class=""><img src="images/images.png"></button></td>
+      </tr> -->
+  </tbody>
+</table>
+
+    <script src="app.js"></script>
+</body>
+</html>
